@@ -43,3 +43,37 @@ const generateError = (msg: string, code: number): never => {
 }
 let error = generateError('Deu error', 404)
 console.log(error)
+
+// Dia 3
+
+// alias types
+
+type Users = {
+  firstName: string,
+  lastName: string,
+  age: number,
+  city: string,
+}
+
+const newPerson: Users = {
+  firstName: 'Feelps',
+  lastName: 'Pain',
+  age: 26,
+  city: 'Los Santos'
+}
+
+// Literal type
+
+let productPrice: 10 | 20 | 30
+let productSize: 'F' | 'S' | 'A'
+
+productPrice = 20
+productSize = "S"
+
+// Intersection 
+
+type userJob = {
+  job: string
+}
+
+type newTypes = Users & userJob

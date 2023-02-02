@@ -37,3 +37,14 @@ const generateError = (msg, code) => {
 };
 let error = generateError('Deu error', 404);
 console.log(error);
+const newPerson = {
+    firstName: 'Feelps',
+    lastName: 'Pain',
+    age: 26,
+    city: 'Los Santos'
+};
+// Literal type
+let productPrice;
+let productSize;
+productPrice = 20;
+productSize = "S";
